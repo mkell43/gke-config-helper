@@ -4,6 +4,20 @@ A small utility to generate a `kubectl` configuration file for all clusters you 
 
 Forked from: [carlpett/gke-config-helper](https://github.com/carlpett/gke-config-helper)
 
+## Installation
+
+An install script is available:
+
+```shell
+source <(curl -s https://raw.githubusercontent.com/mkell43/gke-config-helper/master/install.sh)
+```
+
+If you have `go` installed and `$GOBIN` in your `$PATH` then you can use:
+
+```shell
+go install github.com/mkell43/gke-config-helper
+```
+
 ## Usage
 
 ```shell
