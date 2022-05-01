@@ -13,6 +13,7 @@ mkdir -p "$HOME"/bin
 
 curl https://github.com/mkell43/gke-config-helper/releases/latest/download/gke-config-helper_"${OS}"_"${ARCH}" \
   --output "$HOME"/bin/gke-config-helper \
+  --location \
   --silent
 
 chmod +x "$HOME"/bin/gke-config-helper
