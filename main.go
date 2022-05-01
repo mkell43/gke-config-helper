@@ -21,7 +21,7 @@ import (
 func main() {
 	searchRoot := kingpin.Flag("search-root", "Folder under which to list projects").String()
 	contextNameTemplate := kingpin.Flag("context-name-template", "Template to construct context name").
-		Default("{{ .ProjectId }}-{{ .Name }}").String()
+		Default("{{ .Name }}").String()
 	kingpin.Parse()
 	tpl, err := template.New("").Funcs(sprig.TxtFuncMap()).Parse(*contextNameTemplate)
 	if err != nil {
