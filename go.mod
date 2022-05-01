@@ -1,4 +1,4 @@
-module github.com/carlpett/gke-config-helper
+module github.com/mkell43/gke-config-helper
 
 go 1.15
 
