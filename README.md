@@ -2,6 +2,8 @@
 
 A small utility to generate a `kubectl` configuration file for all clusters you have access to in GKE.
 
+Forked from: [carlpett/gke-config-helper](https://github.com/carlpett/gke-config-helper)
+
 # Usage
 
 ```shell
@@ -33,7 +35,7 @@ This works to any depth, not only direct decendants of `my-folder`.
 
 ## Controlling the context name
 
-By default, the name of each context will be `<projectId>-<clusterName>`. You can control this with the `--context-name-template` flag, which takes a Go template as an argument. Both the [built-in Go functions](https://pkg.go.dev/text/template#hdr-Functions) as well as the [sprig library functions](https://masterminds.github.io/sprig/) are available.
+By default, the name of each context will be `<clusterName>`. You can control this with the `--context-name-template` flag, which takes a Go template as an argument. Both the [built-in Go functions](https://pkg.go.dev/text/template#hdr-Functions) as well as the [sprig library functions](https://masterminds.github.io/sprig/) are available.
 
 The properties available for templating are:
 
